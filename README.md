@@ -1,5 +1,5 @@
 # Trabajo-de-invetigacion-3
-## 1. TEMA: INTRODUCCIÓN A LA PROGRAMACIÓN POR BLOQUES DE ARDUINO EN TINKERCAD
+## 1. TEMA: SENSORES CON ARDUINO EN TINKERCAD
 ## 2. PLANTEAMIENTO DEL PROBLEMA
 La utilización de Arduino hoy en día es muy demandada en proyectos de electrónica, ya que al ser una plataforma libre y de código abierto, los usuarios pueden modificar los requerimientos a sus necesidades, debido a que incorpora un microcontrolador y un entorno de desarrollo que permiten que todo esto sea posible.
 En nuestro caso, al ser un entorno virtual en el cual vamos a trabajar, utilizaremos el Arduino UNO que incorpora Tinkercad, realizando la programación de un circuito mediante un entorno de desarrollo gráfico (Programación por bloques). El propósito de este trabajo de investigación es analizar los aspectos de hardware que ofrece un Arduino, haciendo énfasis en la entrada (sensores) y salida de información (indicadores LEDs,- alarmas). Esto se determinará a partir de la fundamentación correspondiente a los componentes que conforma un Arduino, su funcionalidad y aplicándolo a diferentes circuitos, en los que se presente la operatividad y funcionamiento de algunos sensores que incorpora Tinkercad, tales como, el sensor de luz ambiental, sensor PIR, sensor de distancia, sensor de inclinación, sensor de temperatura y un sensor de gas.  
@@ -127,6 +127,346 @@ Los sensores de gas son dispositivos que indican la presencia de algún gas espe
 - Sensores ultrasónicos. Estos sensores usan emisiones ultrasónicas para detectar cambios en el ruido de fondo del ambiente en donde se encuentren, principalmente para detectar fugas en tuberías -la fuga de un gas genera un sonido ultrasónico en un rango promedio entre los 25 kHz y los 10 Mhz
 - Sensores electroquímicos. Estos sensores tienen dos electrodos divididos por una capa de electrolitos, la cual puede ser líquida, sólida o en forma de gel. Cuando el gas entra en el sensor a través de una membrana y la tensión de polarización está aplicada a los electrodos, se presenta una reacción de reducción-oxidación que genera una corriente eléctrica directamente proporcional a la concentración de gas.
 - Sensores catalíticos. A estos sensores también suelen llamarlos pellistores -palabra formada por la combinación de las palabras en inglés pellet y resistor-. Su funcionamiento es por la oxidación del gas vía catalítica. Dado que estos son los sensores de gas más asequibles para el publico en general, se ahondará un poco más en su configuración y en su funcionamiento.
+## 5. DIAGRAMAS
+### 5.1. DIAGRAMAS DE BLOQUES
+![Diagrama 1 1](https://user-images.githubusercontent.com/68835261/91748961-6fad6100-eb86-11ea-89b5-8a01531a5967.JPG)
+
+![Diagrama 1 2](https://user-images.githubusercontent.com/68835261/91748963-7045f780-eb86-11ea-8d61-d1feed6ecb0e.JPG)
+
+![Diagrama 1 3](https://user-images.githubusercontent.com/68835261/91748971-73d97e80-eb86-11ea-808d-904950519ed0.JPG)
+
+![Diagrama 1 4](https://user-images.githubusercontent.com/68835261/91748978-776d0580-eb86-11ea-8214-191d78467b29.JPG)
+
+![Diagrama 1 5](https://user-images.githubusercontent.com/68835261/91748981-7936c900-eb86-11ea-95ba-6b353ca88434.JPG)
+
+![Diagrama 1 6](https://user-images.githubusercontent.com/68835261/91748993-7d62e680-eb86-11ea-80fd-e37b2cce1e07.JPG)
+
+### 5.2. DIAGRAMAS ELÉCTRICOS
+![Diagrama 1 7](https://user-images.githubusercontent.com/68835261/91748998-7fc54080-eb86-11ea-9214-282cdaaacfb5.JPG)
+
+![Diagrama 1 8](https://user-images.githubusercontent.com/68835261/91749020-8489f480-eb86-11ea-9a1f-0138ab2d8591.JPG)
+
+![Diagrama 1 9](https://user-images.githubusercontent.com/68835261/91749031-86ec4e80-eb86-11ea-8127-2af0da6540dd.JPG)
+
+![Diagrama 2 1](https://user-images.githubusercontent.com/68835261/91749406-09750e00-eb87-11ea-90ee-b9ecf31ff58d.JPG)
+
+![Diagrama 2 2](https://user-images.githubusercontent.com/68835261/91749062-8d7ac600-eb86-11ea-9342-19085d17a310.JPG)
+
+![Diagrama 2 3](https://user-images.githubusercontent.com/68835261/91749071-9075b680-eb86-11ea-96ce-5943295123ca.JPG)
+
+## 6. LISTA DE COMPONENTES
+![Tabla 1 1](https://user-images.githubusercontent.com/68835261/91750083-1b0ae580-eb88-11ea-8408-c9daa48cf5df.jpg)
+
+## 7. MAPA DE VARIABLES
+### DETECTOR DE LUZ AMBIENTAL
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 1 1](https://user-images.githubusercontent.com/68835261/91749160-b0a57580-eb86-11ea-82cd-24eda2634664.JPG)
+
+### - Interfaz de usuario
+![Figura 1 2](https://user-images.githubusercontent.com/68835261/91749169-b438fc80-eb86-11ea-87be-cf539222b898.JPG)
+
+Donde:
+- Led Blanco --> Representa altas cantidades de luz.
+- Led Naranja --> Representa medianas cantidades de luz.
+- Led Azul --> Representa bajas cantidades de luz.
+
+### - Tabla - resumen de variables
+![Tabla 1 2](https://user-images.githubusercontent.com/68835261/91750086-1d6d3f80-eb88-11ea-847b-2dcf33235e98.JPG)
+
+### DETECTOR DE MOVIMIENTO
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 1 3](https://user-images.githubusercontent.com/68835261/91749187-ba2edd80-eb86-11ea-9cc4-cf144c06dfdb.JPG)
+
+### - Interfaz de usuario
+![Figura 1 4](https://user-images.githubusercontent.com/68835261/91749196-bc913780-eb86-11ea-9fa8-8aec37aad8ca.JPG)
+
+Donde:
+- Transductor piezoeléctrico --> Representa a una alarma.
+
+### - Tabla - resumen de variables
+![Tabla 1 3](https://user-images.githubusercontent.com/68835261/91750095-2100c680-eb88-11ea-80fa-bc6104b22c59.JPG)
+
+### DETECTOR DE DISTANCIA
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 1 5](https://user-images.githubusercontent.com/68835261/91749209-c2871880-eb86-11ea-913e-2848950dd525.JPG)
+
+### - Interfaz de usuario
+![Figura 1 6](https://user-images.githubusercontent.com/68835261/91749220-c87cf980-eb86-11ea-8317-5c13d31e2d9b.JPG)
+
+Donde:
+- Led Rojo --> Representa corta distancia entre un objeto y el sensor (Estado de alarma).
+- Led Naranja -->Representa mediana distancia de un objeto con respecto al sensor.
+- Led Rojo --> Representa larga distancia de un objeto con respecto al sensor.
+
+### - Tabla - resumen de variables
+![Tabla 1 4](https://user-images.githubusercontent.com/68835261/91750104-252ce400-eb88-11ea-8e3c-1671c2b6b339.JPG)
+
+### DETECTOR DE DISTANCIA
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 1 7](https://user-images.githubusercontent.com/68835261/91749377-011cd300-eb87-11ea-9001-0726bc4472cf.JPG)
+
+### - Interfaz de usuario
+![Figura 1 8](https://user-images.githubusercontent.com/68835261/91749611-5953d500-eb87-11ea-9e08-db4ed4171f23.JPG)
+
+### - Tabla - resumen de variables
+![Tabla 1 5](https://user-images.githubusercontent.com/68835261/91750109-278f3e00-eb88-11ea-84b0-a9a8e321ccca.JPG)
+
+### DETECTOR DE TEMPERATURA
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 1 9](https://user-images.githubusercontent.com/68835261/91749621-5ce75c00-eb87-11ea-948e-d052142a174a.JPG)
+
+### - Interfaz de usuario
+![Figura 2 1](https://user-images.githubusercontent.com/68835261/91749631-61ac1000-eb87-11ea-8224-9a659ef37cc5.JPG)
+
+Donde:
+- Led Rojo --> Representa altos niveles de temperatura
+- Led Azul --> Representa bajos niveles de temperatura
+
+### - Tabla - resumen de variables
+![Tabla 1 6](https://user-images.githubusercontent.com/68835261/91750118-2a8a2e80-eb88-11ea-8e9a-9ae307951179.JPG)
+
+### DETECTOR DE GAS
+### - Variables utilizadas para el funcionamiento del circuito
+![Figura 2 2](https://user-images.githubusercontent.com/68835261/91749641-653f9700-eb87-11ea-867d-3c936cbdf0b2.JPG)
+
+### - Interfaz de usuario
+![Figura 2 3](https://user-images.githubusercontent.com/68835261/91749649-68d31e00-eb87-11ea-8235-c5ba0968b4a1.JPG)
+
+Donde:
+- Led Rojo --> Representa altas cantidades de gas.
+- Led Azul --> Representa bajas cantidades de gas.
+- Transductor piezoeléctrico --> Representa a una alarma.
+
+### - Tabla - resumen de variables
+![Tabla 1 7](https://user-images.githubusercontent.com/68835261/91750131-30800f80-eb88-11ea-861b-f282fd7155c8.JPG)
+
+## 8. EXPLICACIÓN DEL CÓDIGO FUENTE
+### DETECTOR DE LUZ AMBIENTAL 
+El funcionamiento del programa básicamente consiste de estructuras condicionales “If-Else” anidadas, en las que se postulan las diferentes condiciones para que los LEDs funcionen como indicadores de la existencia de bajas, medianas y altas cantidades de luz. (Figura 2.4).
+Por otro lado, la primera línea de código (expresada en bloques), nos permite asignar el pin analógico A0 a la variable creada “BrilloLuz”.
+La segunda línea de código, nos permite imprimir en un monitor, los valores o niveles de luminosidad que el sensor capta.
+![Figura 2 4](https://user-images.githubusercontent.com/68835261/91749654-6c66a500-eb87-11ea-815a-14f0c2fa3f09.JPG)
+
+### - Alta luminosidad
+La primera estructura condicional nos estipula que, si la variable BrilloLuz se encuentra en el rango de 13 y 17, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.4 – Llave de color rojo), en la que únicamente el pin digital 2 (LED blanco) se encontrará en estado lógico ALTO. Esto quiere decir que existen altos niveles de luz captados por el sensor de luz ambiental en un determinado lugar.
+
+### - Mediana luminosidad
+La segunda estructura condicional nos estipula que, si la variable BrilloLuz se encuentra en el rango de 17 y 26, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.4 – Llave de color azul), en la que únicamente el pin digital 3 (LED naranja) se encontrará en estado lógico ALTO. Esto quiere decir que existen medianos niveles de luz captados por el sensor de luz ambiental en un determinado lugar.
+
+### - Baja luminosidad
+Si no se cumple con ninguna de las dos estructuras condicionales anteriores, se asume que la variable BrilloLuz se encontrará en el rango de 26 en adelante, entonces el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.4 – Llave de color naranja), en la que únicamente el pin digital 4 (LED azul) se encontrará en estado lógico ALTO. Esto quiere decir que existen bajos niveles de luz captados por el sensor de luz ambiental en un determinado lugar.
+
+### DETECTOR DE MOVIMIENTO
+![Figura 2 5](https://user-images.githubusercontent.com/68835261/91749668-725c8600-eb87-11ea-9a82-b27c1b6fb0bd.JPG)
+
+### - Existencia de Movimiento
+La primera estructura condicional (Ilustrada en la figura 2.5 – Llave de color rojo) nos estipula que, si la variable Sensor se encuentra en estado lógico ALTO, el programa ejecutará la secuencia de bloques, en la que el pin digital 3 (LED) y el pin digital 4 (Transductor piezoeléctrico) se encontrarán en estado lógico ALTO. Esto quiere decir que el sensor recibió niveles de radiación infrarroja, lo cual implica que existió movimiento en un área específica. Para indicar dicho suceso, hemos considerado encender el LED y el transductor piezoeléctrico en señal de alarma.
+
+### - No existe Movimiento
+Si no se cumple dicha condición se ejecutará la secuencia de bloques (Ilustrada en la figura 2.5 – Llave de color azul), en la que el pin digital 3 (LED) y el pin digital 4 (Transductor piezoeléctrico) se encontrarán en estado lógico BAJO. Esto quiere decir que el sensor no recibió niveles de radiación infrarroja, lo cual implica que no existió movimiento en un área específica. 
+
+### DETECTOR DE DISTANCIA
+![Figura 2 6](https://user-images.githubusercontent.com/68835261/91749673-75f00d00-eb87-11ea-86a2-a23287b1485b.JPG)
+
+### - Corta Distancia
+La primera estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de distancia entre 0 y 100 cm, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.6 – Llave de color rojo), en la que únicamente el pin digital 2 (LED rojo) se encontrará en estado lógico ALTO. Esto quiere decir que la distancia entre el objeto y el sensor ultrasónico es corta. Para lo cual hemos encendido un LED rojo en señal de alarma.
+
+### - Mediana Distancia
+La segunda estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de distancia entre 100 y 200 cm, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.6 – Llave de color azul), en la que únicamente el pin digital 3 (LED naranja) se encontrará en estado lógico ALTO. Esto quiere decir que la distancia entre el objeto y el sensor ultrasónico es mediana. Para lo cual hemos encendido un LED naranja para indicar dicha distancia.
+
+### - Larga Distancia
+Si no se cumple con ninguna de las dos estructuras condicionales anteriores, se asume que la variable Sensor se encontrará en el rango de 200 cm. en adelante, entonces el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.6 – Llave de color naranja), en la que únicamente el pin digital 4 (LED azul) se encontrará en estado lógico ALTO. Esto quiere decir que la distancia entre el objeto y el sensor ultrasónico es lejana. Para lo cual hemos encendido un LED azul para indicar dicha distancia.
+
+### DETECTOR DE INCLINACIÓN
+![Figura 2 7](https://user-images.githubusercontent.com/68835261/91749675-7688a380-eb87-11ea-9c9e-ab478729a895.JPG)
+
+### - Existencia de inclinación
+La estructura condicional (Ilustrada en la figura 2.7 – Llave de color rojo) nos estipula que, si la variable Sensor se encuentra en estado lógico ALTO, el programa ejecutará la secuencia de bloques, en la que el pin digital 3 (LED) se encontrará en estado lógico ALTO. Esto quiere decir que existió inclinación de un objeto y esto fue captado por el sensor, expresándolo como una señal digital equivalente a 1 lógico. Para indicar dicho suceso, hemos considerado encender un LED.
+
+### - No existe inclinación
+Si no se cumple dicha condición se ejecutará la secuencia de bloques (Ilustrada en la figura 2.5 – Llave de color azul), en la que el pin digital 3 (LED se encontrarán en estado lógico BAJO. Esto quiere decir que no existió inclinación alguna del objeto y esto fue captado por el sensor, expresándolo como una señal digital equivalente a 0 lógico. Para indicar dicho suceso, hemos considerado apagar el LED.
+
+### DETECTOR DE TEMPERATURA
+![Figura 2 8](https://user-images.githubusercontent.com/68835261/91749690-7dafb180-eb87-11ea-915e-d0d893368eff.jpg)
+
+### - Temperaturas entre -40°C y -10°C
+La primera estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de temperatura entre -40 y -10°C, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.8 – Llave de color azul), en la que únicamente el pin digital 6 (LED azul) se encontrará en estado lógico ALTO. Esto quiere decir que la temperatura captada por el sensor es baja. Para lo cual hemos encendido un LED azul para representar dicha característica.
+
+### -	Temperaturas entre -10 °C y 20°C
+La segunda estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de temperatura entre -10 y 20°C, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.8 – Llave de color verde), en la que los pines digitales 6 y 5 (LED azul y verde respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que la temperatura captada por el sensor aumentó en relación al caso anterior. Para lo cual hemos encendido los LEDs azul y verde para representar dicha característica.
+
+### -	Temperaturas entre 20 °C y 50°C
+La tercera estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de temperatura entre -20 y 50°C, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.8 – Llave de color amarillo), en la que los pines digitales 6, 5 y 4 (LEDs azul, verde y amarillo respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que la temperatura captada por el sensor aumentó en relación a los dos casos anteriores. Para lo cual hemos encendido los LEDs azul, verde y amarillo para representar dicha característica.
+
+### -	Temperaturas entre 50 °C y 90°C
+La cuarta estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de temperatura entre 50 y 90°C, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.8 – Llave de color naranja), en la que los pines digitales 6, 5, 4 y 3 (LEDs azul, verde, amarillo y naranja respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que la temperatura captada por el sensor aumentó en relación a los tres casos anteriores. Para lo cual hemos encendido los LEDs azul, verde, amarillo y naranja para representar dicha característica.
+
+### -	Temperaturas mayores a 90 °C 
+Si no se cumple ninguna de las estructuras condicionales anteriores, se asume que la temperatura estará con valores mayores a 90°C, entonces el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.8 – Llave de color rojo), en la que los pines digitales 6, 5, 4, 3 y 2 (LEDs azul, verde, amarillo, naranja y rojo respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que la temperatura captada por el sensor aumentó en relación a los cuatro casos anteriores, siendo los niveles más altos de temperatura. Para lo cual hemos encendido todos los LEDs y así representar dicha característica. En otras palabras, los Leds indican de manera gráfica la escala de temperatura que es captada por el sensor. 
+
+### DETECTOR DE GAS
+![Figura 2 9](https://user-images.githubusercontent.com/68835261/91749697-80aaa200-eb87-11ea-8ea7-64e439319acc.jpg)
+
+### -	Nivel de gas entre 306 y 346
+La primera estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de nivel de gas entre 306 y 346, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.9 – Llave de color azul), en la que únicamente el pin digital 6 (LED azul) se encontrará en estado lógico ALTO. Esto quiere decir que los niveles de gas captados por el sensor son bajos. Para lo cual hemos encendido un LED azul, representando así dicha característica.
+
+### -	Nivel de gas entre 346 y 386
+La segunda estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de nivel de gas entre 346 y 386, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.9 – Llave de color verde), en la que los pines digitales 6 y 5 (LEDs azul y verde respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que los niveles de gas captados por el sensor aumentaron en relación al caso anterior. Para lo cual hemos encendido los LEDs azul y verde, representando así dicha característica.
+
+### -	Nivel de gas entre 386 y 456
+La tercera estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de nivel de gas entre 386 y 456, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.9 – Llave de color amarillo), en la que los pines digitales 6, 5 y 4 (LEDs azul, verde y amarillo respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que los niveles de gas captados por el sensor aumentaron en relación a los dos casos anteriores. Para lo cual hemos encendido los LEDs azul, verde y amarillo, representando así dicha característica.
+
+### -	Nivel de gas entre 456 y 560
+La cuarta estructura condicional nos estipula que, si la variable Sensor se encuentra en el rango de nivel de gas entre 456 y 560, el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.9 – Llave de color naranja), en la que los pines digitales 6, 5, 4 y 3 (LEDs azul, verde, amarillo y naranja respectivamente) se encontrarán en estado lógico ALTO. Esto quiere decir que los niveles de gas captados por el sensor aumentaron en relación a los tres casos anteriores. Para lo cual hemos encendido los LEDs azul, verde, amarillo y naranja, representando así dicha característica.
+
+### -	Niveles de gas mayores a 560
+Si no se cumple ninguna de las estructuras condicionales anteriores, se asume que los niveles de gas están por encima de 560, entonces el programa ejecutará la secuencia de bloques (Ilustrada en la figura 2.9 – Llave de color rojo), en la que los pines digitales 6, 5, 4 , 3 y 2 (LEDs azul, verde, amarillo, naranja y rojo respectivamente) se encontrarán en estado lógico ALTO, al igual que el pin digital 7 (Transductor piezoeléctrico). Esto quiere decir que los niveles de gas captados por el sensor aumentaron en relación a los cuatro casos anteriores, siendo niveles altos de gas captados por el sensor. Para lo cual hemos encendido todos los LEDs y el transductor piezoeléctrico que representa una señal de alerta o alarma por altas cantidades de gas situadas en un lugar determinado.
+
+## 9. DESCRIPCIÓN DE PRERREQUISITOS Y CONFIGURACIÓN
+En lo que corresponde a la utilización de aplicaciones secundarias para que el programa funcione correctamente, podemos decir que no se ha necesitado de ninguna que influya directamente sobre su programación, ya que Tinkercad ofrece formatos de programación tanto en un entorno textual como gráfico. 
+
+Ahora bien, necesitamos saber cuales son los pasos para poder programar un Arduino en una interfaz gráfica (mediante bloques) en Tinkercad. Para lo cual, debemos:
+
+1.	Seleccionar en la sección de componentes, todos los elementos que se utilizarán en el circuito, entre ellos, el Arduino UNO R3 que incorpora Tinkercad.
+![DP1](https://user-images.githubusercontent.com/68835261/91749085-953a6a80-eb86-11ea-93e4-128cd287f088.JPG)
+
+2.	Conectar todos los componentes electrónicos de entrada y salida en los pines digitales del Arduino, se recomienda utilizar un protoboard para mayor facilidad al momento de realizar las conexiones.
+![DP2](https://user-images.githubusercontent.com/68835261/91749106-9bc8e200-eb86-11ea-8d51-2caa83876604.JPG)
+
+3.	Dirigirse a la barra de control y seleccionar la opción “Código”
+![DP3](https://user-images.githubusercontent.com/68835261/91749113-a08d9600-eb86-11ea-860a-b715ccafcd2e.JPG)
+
+4.	Nos encontraremos con la siguiente interfaz y seleccionaremos la opción de programación mediante “Bloques”. Por default el programa incorpora 4 bloques de código con instrucciones variadas. Entonces procedemos a borrar y a programar nuestro circuito
+![DP4](https://user-images.githubusercontent.com/68835261/91749118-a2eff000-eb86-11ea-8744-9d73a232ed14.JPG)
+
+5.	En la siguiente figura se encuentran todos los bloques categorizados (bloques de salida, entrada, notación, control, matemáticas, variables). Entonces seleccionamos, los que sean necesarios y de esta manera dar las instrucciones para que nuestro circuito funcione a nuestra necesidad. En este caso un sistema de semáforos controlados por dos switch de entrada.
+![DP5](https://user-images.githubusercontent.com/68835261/91749134-a84d3a80-eb86-11ea-9d37-8efe71522183.JPG)
+
+6.	Una vez que ya se ha realizado la programación (ilustrada en la sección 8. Explicación del código fuente) procedemos a dar clic en “Iniciar simulación” y verificar que el circuito funcione correctamente (Sección 10. Aportaciones)
+![DP6](https://user-images.githubusercontent.com/68835261/91749148-ac795800-eb86-11ea-95a4-2736ddd31a32.JPG)
+
+Por otro lado, para el correcto funcionamiento de cada circuito, hay que tener en cuenta varios puntos específicos. Los cuales son indispensables para entender los rangos de operación de cada sensor. 
+
+### •	Detector de luz ambiental
+-	Nivel de luz alta (LED blanco encendido) cuando el sensor capte un rango de valores entre 13 y 17.
+-	Nivel de luz mediano (LED naranja encendido) cuando el sensor capte un rango de valores entre 17 y 26.
+-	Nivel de luz baja (LED azul encendido) cuando el sensor capte un rango de valores mayores a 26. 
+
+### •	Detector de movimiento
+-	Encendido del LED y del transductor piezoeléctrico en señal de alarma por detectar movimiento de un objeto con el sensor PIR.
+
+### •	Detector de distancia
+-	Distancia cercana entre el objeto y el sensor ultrasónico, cuando este último capte una distancia que se encuentre entre 0 y 100 cm. (LED rojo encendido).
+-	Distancia mediana entre el objeto y el sensor ultrasónico, cuando este último capte una distancia que se encuentre entre 100 y 200 cm. (LED naranja encendido).
+-	Distancia mediana entre el objeto y el sensor ultrasónico, cuando este último capte una distancia que se encuentre entre 100 y 200 cm. (LED azul encendido).
+
+### •	Detector de inclinación
+-	Encendido del LED cuando el sensor detecte inclinación.
+-	Apagado del LED cuando el sensor no detecte inclinación.
+
+### •	Detector de temperatura
+-	Temperaturas entre -40°C y -10°C  Encendido del LED azul (Temperaturas bajas).
+-	Temperaturas entre -10°C y 20°C  Encendido del LED azul y verde.
+-	Temperaturas entre 20°C y 50°C  Encendido del LED azul, verde y amarillo.
+-	Temperaturas entre 50°C y 90°C  Encendido del LED azul, verde, amarillo y naranja.
+-	Temperaturas mayores a 90°C  Encendido del LED azul, verde, amarillo, naranja, rojo.
+
+### •	Detector de gas
+-	Niveles de gas entre 306 y 346  Encendido del LED azul (bajos niveles de gas).
+-	Niveles de gas entre 346 y 386  Encendido del LED azul, y verde
+-	Niveles de gas entre 386 y 456  Encendido del LED azul, verde y amarillo
+-	Niveles de gas entre 456 y 560  Encendido del LED azul, verde, amarillo y naranja
+-	Niveles de gas mayores a 560  Encendido del LED azul, verde, amarillo, naranja y rojo y del transductor piezoeléctrico en señal de alarma (altos niveles de gas).
+
+Nota: Para programar en Arduino mediante Tinkercad, se requiere de la familiarización con fundamentos básicos de programación (Principalmente sobre estructuras condicionales, lógica booleana) y conocimientos sobre el funcionamiento de los sensores, además de la constitución, funcionalidad y partes de un Arduino.
+
+## 10. APORTACIONES
+### Características principales del Arduino UNO
+-	Microcontrolador: ATmega328 
+-	Voltaje de operación: 5V 
+-	Voltaje de entrada (recomendado): 7-12V 
+-	Voltaje de entrada (límites): 6-20V 
+-	Pines de E/S digitales: 14 (de los cuales 6 proporcionan salida PWM) 
+-	Pines de entrada analógica: 6 
+-	Corriente DC por pin de E/S: 40 mA 
+-	Corriente DC para 3.3V Pin: 50 mA 
+-	Memoria Flash: 32 KB de los cuales 0,5 KB utilizados por el bootloader 
+-	SRAM: 2 KB (ATmega328) 
+-	EEPROM: 1 KB (ATmega328) Velocidad de reloj: 16 MHz
+
+### Analog IN
+Si se requiere de la utilización de señales análogas y utilizarlas como datos de información de entrada, debemos conocer, lo siguiente:
+-	La placa Arduino Uno tiene 6 pines analógicos, que utilizan ADC (Convertidor de Analógico a Digital). Estos pines sirven como entradas analógicas, pero también pueden funcionar como entradas o salidas digitales.
+ 
+-	El ADC es un circuito electrónico utilizado para convertir señales analógicas en señales digitales. Esta representación digital de señales analógicas permite al procesador, que es un dispositivo digital, medir la señal analógica y utilizarla durante su funcionamiento.
+-	Los pines Arduino A0-A5 son capaces de leer tensiones analógicas. En Arduino el ADC tiene una resolución de 10 bits, lo que significa que puede representar una tensión analógica de 1.024 niveles digitales. El ADC convierte el voltaje en bits que el microprocesador puede entender.
+
+### Ejemplo del funcionamiento del circuito detector de luz ambiental 
+### -	Niveles de luz mayores a 26
+![Figura 3 1](https://user-images.githubusercontent.com/68835261/91749703-843e2900-eb87-11ea-8126-7ab0de9d56bf.JPG)
+
+### -	Niveles de luz entre 17 y 26
+![Figura 3 2](https://user-images.githubusercontent.com/68835261/91749714-899b7380-eb87-11ea-8353-9362b8683c71.JPG)
+
+### -	Niveles de luz entre 13 y 17
+![Figura 3 3](https://user-images.githubusercontent.com/68835261/91749729-8e602780-eb87-11ea-8e0c-2d3d552f1da7.JPG)
+
+### Ejemplo del funcionamiento del circuito detector de movimiento 
+### -	Existencia de movimiento
+![Figura 3 4](https://user-images.githubusercontent.com/68835261/91749749-94560880-eb87-11ea-93f4-87742104f366.JPG)
+
+### -	Inexistencia de movimiento
+![Figura 3 5](https://user-images.githubusercontent.com/68835261/91749767-991abc80-eb87-11ea-9d66-99dd241575c1.JPG)
+
+### Ejemplo del funcionamiento del circuito detector de distancia
+### -	Distancia entre 0 y 100 cm.
+![Figura 3 6](https://user-images.githubusercontent.com/68835261/91749775-9cae4380-eb87-11ea-9dfc-18fcc85d8be4.JPG)
+
+### -	Distancia entre 100 y 200 cm.
+![Figura 3 7](https://user-images.githubusercontent.com/68835261/91749785-a172f780-eb87-11ea-8bf8-889aaf0bcb24.JPG)
+
+### -	Distancias mayores a 200 cm.
+![Figura 3 8](https://user-images.githubusercontent.com/68835261/91749798-a637ab80-eb87-11ea-8459-d28197865585.JPG)
+
+### Ejemplo del funcionamiento del circuito detector de inclinación
+### -	Inexistencia de inclinación.
+![Figura 3 9](https://user-images.githubusercontent.com/68835261/91749815-adf75000-eb87-11ea-964b-22d3db97ed05.JPG)
+
+### -	Existencia de inclinación.
+![Figura 4 1](https://user-images.githubusercontent.com/68835261/91749822-b0f24080-eb87-11ea-8c21-0a9da48bf846.JPG)
+
+### Ejemplo del funcionamiento del circuito detector de temperatura
+### -	Temperatura entre -40°C y -10 °C.
+![Figura 4 2](https://user-images.githubusercontent.com/68835261/91749831-b3ed3100-eb87-11ea-93cf-881d8b05db57.JPG)
+
+### -	Temperatura entre -10°C y 20 °C.
+![Figura 4 3](https://user-images.githubusercontent.com/68835261/91749847-b9e31200-eb87-11ea-878a-22169779f64e.JPG)
+
+### -	Temperatura entre 20°C y 50 °C.
+![Figura 4 4](https://user-images.githubusercontent.com/68835261/91749854-bfd8f300-eb87-11ea-901c-eb51cc7d3c4a.JPG)
+
+### -	Temperatura entre 50°C y 90 °C.
+![Figura 4 5](https://user-images.githubusercontent.com/68835261/91749865-c4051080-eb87-11ea-8371-ed8fd94364e2.JPG)
+
+### -	Temperaturas mayores a 90 °C.
+![Figura 4 6](https://user-images.githubusercontent.com/68835261/91749877-c7989780-eb87-11ea-8d2e-a4d822e3887a.JPG)
+
+### Ejemplo del funcionamiento del circuito detector de gas
+### -	Niveles de gas entre 306 y 346.
+![Figura 4 7](https://user-images.githubusercontent.com/68835261/91749890-cbc4b500-eb87-11ea-8c02-a4f877748934.JPG)
+
+### -	Niveles de gas entre 346 y 386.
+![Figura 4 8](https://user-images.githubusercontent.com/68835261/91749898-d0896900-eb87-11ea-9b8c-54c94f34fc60.JPG)
+
+### -	Niveles de gas entre 386 y 456.
+![Figura 4 9](https://user-images.githubusercontent.com/68835261/91749907-d54e1d00-eb87-11ea-9c4d-bb65e930adba.JPG)
+
+### -	Niveles de gas entre 456 y 560.
+![Figura 5 1](https://user-images.githubusercontent.com/68835261/91749925-daab6780-eb87-11ea-97d1-b5d3a120fcc0.JPG)
+
+### -	Niveles de gas mayores a 560.
+![Figura 5 2](https://user-images.githubusercontent.com/68835261/91749934-de3eee80-eb87-11ea-99e0-2631a0633cd8.JPG)
+
 ## 11.Conclusiones
 -	La implementación de los seis circuitos, cuya operatividad se basa en la función de cada sensor utilizado, se lo ha realizado de tal manera que los datos de entrada y salida que se utilizaron se relacionen entre sí por medio de las instrucciones que se establecieron en el programa elaborado en un entorno gráfico, en el cual se implementaron principalmente estructuras condicionales para cumplir el funcionamiento de dichos circuitos, dependiendo del estado lógico o el rango de valores en el que se encuentren las entradas (Sensores) para que sus salidas (LEDs y transductores piezoeléctricos) se comporten como señal de alarma o una escala que obedezca a los parámetros del nivel de luz, temperatura y gas existente en un determinado lugar, también la existencia o no de movimiento e inclinación de determinados objetos y la distancia existente entre un objeto con respecto al sensor. Claramente todo ello depende del sensor con el que se esté trabajando.
 -	La familiarización con la funcionalidad de cada componente que conforma a un Arduino (Hardware), en este caso el Arduino UNO, fueron muy importantes para lograr realizar nuestro circuito y entender cómo interactúan, mediante el programa para con los componentes del circuito implementado. Básicamente el cerebro de esta plataforma electrónica es el microcontrolador ATMEGA 328, el cual contiene un total de 28 pines o puertos, y 14 de ellos (correspondientes a los pines digitales) hemos utilizado para la entrada y salida de información, es decir, los correspondientes a los sensores PIR, de distancia (ultrasónico), y de inclinación y LED´s respectivamente. Además de ello también se utilizaron los pines de entrada analógicos para leer los datos captados por los sensores de luz ambiental, temperatura y gas. Hay que tener en cuenta que el reloj oscilador del Arduino es fundamental, ya que gracias a él las instrucciones se realizan con respecto a los tiempos que, en este caso, se han impuesto por default en las instrucciones del programa. Y cuya información se guarda en cada una de las memorias que incorpora esta plataforma (SRAM, EEPROM, FLASH).
@@ -139,18 +479,4 @@ Los sensores de gas son dispositivos que indican la presencia de algún gas espe
 
 ![Cronograma 3 Trabajo de investigacion](https://user-images.githubusercontent.com/66962449/91748631-e4cc6680-eb85-11ea-8590-29249957daae.png)
 
-## 14. Bibliografia
-- [1] Pereira Pires, R., Gracioli, G., Wanner, L. y Augusto Medeiros Frohlich, A. Evaluación de un algoritmo de ubicación basado en RSSI para redes de sensores inalámbricos, 16 de junio de 2011 Avaliable:
-https://ieeexplore.ieee.org/document/5876427
-- [2] González, R., Pérez, JM, Vela, O. y De Burgos, E.Comparación de rendimiento de un detector de semiconductores CZT de gran volumen y un detector de centelleo 28 de agosto de 2006, Available:
-https://ieeexplore.ieee.org/document/1684119
-- [3]Yusof, HHM, Harun, SW, Dimyati, K., Bora, T., Sterckx, K., Mohammed, WS y Dutta, J.Sensores de humedad integrados de bajo costo basados en nanobarras de óxido de zinc para la plataforma Arduino", 1 de abril de 2019 Available:
-https://ieeexplore.ieee.org/document/8574955
-- Anonimo ( 20 abril,2020) Sensor de inclinación obtenido de :
-https://descubrearduino.com/tilt-switch-o-sensor-de-inclinacion-que-es-y-para-que-sirve/
-- Anonimo ( 6 de Marzo, 2019) Sensor de Temperatura obtenido de :
-https://srcsl.com/tipos-sensores-temperatura/
-- 330ohms  (11 julio, 2016) Sensor de Gas recuperado de:
-https://blog.330ohms.com/2016/07/11/como-funcionan-los-sensores-de-gas/
-
-
+## 14. Aportaciones
