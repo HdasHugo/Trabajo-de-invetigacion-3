@@ -479,17 +479,41 @@ Si se requiere de la utilización de señales análogas y utilizarlas como datos
 
 ![Cronograma 3 Trabajo de investigacion](https://user-images.githubusercontent.com/66962449/91748631-e4cc6680-eb85-11ea-8590-29249957daae.png)
 
-## 14. Bilbiografia
-- [1] Pereira Pires, R., Gracioli, G., Wanner, L. y Augusto Medeiros Frohlich, A. Evaluación de un algoritmo de ubicación basado en RSSI para redes de sensores inalámbricos, 16 de junio de 2011 Avaliable:
-https://ieeexplore.ieee.org/document/5876427
-- [2] González, R., Pérez, JM, Vela, O. y De Burgos, E.Comparación de rendimiento de un detector de semiconductores CZT de gran volumen y un detector de centelleo 28 de agosto de 2006, Available:
-https://ieeexplore.ieee.org/document/1684119
-- [3]Yusof, HHM, Harun, SW, Dimyati, K., Bora, T., Sterckx, K., Mohammed, WS y Dutta, J.Sensores de humedad integrados de bajo costo basados en nanobarras de óxido de zinc para la plataforma Arduino", 1 de abril de 2019 Available:
-https://ieeexplore.ieee.org/document/8574955
-- Anonimo ( 20 abril,2020) Sensor de inclinación obtenido de :
-https://descubrearduino.com/tilt-switch-o-sensor-de-inclinacion-que-es-y-para-que-sirve/
-- Anonimo ( 6 de Marzo, 2019) Sensor de Temperatura obtenido de :
-https://srcsl.com/tipos-sensores-temperatura/
-- 330ohms  (11 julio, 2016) Sensor de Gas recuperado de:
-https://blog.330ohms.com/2016/07/11/como-funcionan-los-sensores-de-gas/
+## 14. Bibliografía
 
+## 15. Anexos
+### 15.1 Manual de usuario
+El presente manual está diseñado para facilitar el uso de los 6 circuitos que nos permiten simular el funcionamiento de detección de luz ambiental, movimiento, distancia, inclinación, temperatura y detección de gas. 
+
+1.	Cuenta en Tinkercad
+Si no se ha registrado en Tinkercad, lo primero que debe hacer es crearse una cuenta introduciendo sus datos personales, correo electrónico y contraseña. Tal como se muestra, a continuación:
+![MU 1](https://user-images.githubusercontent.com/68835261/91749970-ec8d0a80-eb87-11ea-83ea-469a1a7d89d2.JPG)
+
+2.	Una vez creada la cuenta, lo que debe realizar es proceder a ingresar al siguiente enlace: 
+https://www.tinkercad.com/things/9oqJvGw5adi
+
+3.	El enlace le llevará a la dirección web en el que podrá ejecutar y simular los 6 circuitos en una interfaz de laboratorio virtual que ofrece Tinkercad. Le aparecerá una pestaña en la que tendrá que presionar el botón Iniciar Simulación, tal como se muestra a continuación. 
+![MU 2](https://user-images.githubusercontent.com/68835261/91749978-edbe3780-eb87-11ea-825b-372d3094a526.JPG)
+
+4.	Escoja un circuito
+En este punto tendrá que activar uno de los seis circuitos, cada uno está implementado con diferentes sensores.
+-	Circuito detector de luz ambiental
+![MU 3](https://user-images.githubusercontent.com/68835261/91749991-f151be80-eb87-11ea-833b-e623966b3a55.JPG)
+
+-	Circuito detector de movimiento
+![MU 4](https://user-images.githubusercontent.com/68835261/91749999-f6af0900-eb87-11ea-85d4-489078feaef3.JPG)
+
+-	Circuito detector de distancia
+![MU 5](https://user-images.githubusercontent.com/68835261/91750018-fd3d8080-eb87-11ea-998e-d031ccc9d8de.JPG)
+
+-	Circuito detector de inclinación
+![MU 6](https://user-images.githubusercontent.com/68835261/91750026-01699e00-eb88-11ea-8005-5bea67f3626e.JPG)
+
+Circuito detector de temperatura
+![MU 7](https://user-images.githubusercontent.com/68835261/91750042-075f7f00-eb88-11ea-842a-e3f28d29f6bd.JPG)
+
+-	Circuito detector de gas
+![MU 8](https://user-images.githubusercontent.com/68835261/91750056-0cbcc980-eb88-11ea-845d-12b110e990a5.JPG)
+
+### 15.2 Hojas Técnicas
+![HT 1](https://user-images.githubusercontent.com/68835261/91749963-ea2ab080-eb87-11ea-86e1-556c40a1e4fd.JPG)
