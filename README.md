@@ -139,4 +139,18 @@ Los sensores de gas son dispositivos que indican la presencia de algún gas espe
 
 ![Cronograma 3 Trabajo de investigacion](https://user-images.githubusercontent.com/66962449/91748631-e4cc6680-eb85-11ea-8590-29249957daae.png)
 
-## 14. Aportaciones
+## 14. Bibliografia
+- [1] Pereira Pires, R., Gracioli, G., Wanner, L. y Augusto Medeiros Frohlich, A. Evaluación de un algoritmo de ubicación basado en RSSI para redes de sensores inalámbricos, 16 de junio de 2011 Avaliable:
+https://ieeexplore.ieee.org/document/5876427
+- [2] González, R., Pérez, JM, Vela, O. y De Burgos, E.Comparación de rendimiento de un detector de semiconductores CZT de gran volumen y un detector de centelleo 28 de agosto de 2006, Available:
+https://ieeexplore.ieee.org/document/1684119
+- [3]Yusof, HHM, Harun, SW, Dimyati, K., Bora, T., Sterckx, K., Mohammed, WS y Dutta, J.Sensores de humedad integrados de bajo costo basados en nanobarras de óxido de zinc para la plataforma Arduino", 1 de abril de 2019 Available:
+https://ieeexplore.ieee.org/document/8574955
+- Anonimo ( 20 abril,2020) Sensor de inclinación obtenido de :
+https://descubrearduino.com/tilt-switch-o-sensor-de-inclinacion-que-es-y-para-que-sirve/
+- Anonimo ( 6 de Marzo, 2019) Sensor de Temperatura obtenido de :
+https://srcsl.com/tipos-sensores-temperatura/
+- 330ohms  (11 julio, 2016) Sensor de Gas recuperado de:
+https://blog.330ohms.com/2016/07/11/como-funcionan-los-sensores-de-gas/
+
+
