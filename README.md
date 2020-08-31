@@ -531,6 +531,9 @@ Circuito detector de temperatura
 ![HT 1](https://user-images.githubusercontent.com/68835261/91749963-ea2ab080-eb87-11ea-86e1-556c40a1e4fd.JPG)
 
 ### 15. Aportaciones
+
+- Simulacion del sensor infrarojo en tinkercad
+
 ![Sensor infrarojo](https://user-images.githubusercontent.com/66962449/91756762-de90b700-eb92-11ea-84d0-2cc9ea5dd288.png)
 
 
